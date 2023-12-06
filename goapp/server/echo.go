@@ -22,6 +22,8 @@ func (h EchoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			<input name="user_input">
 			<input type="submit" value="Submit!">
 		</form>
+		<br />
+		<p>Copyleft@mizumoto-cn 2023</p>
 	</body>
 	</html>`))
 }
@@ -40,6 +42,8 @@ func (h EchoPrintHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	<body>
 		<h1>GoAPP:` + r.URL.Path + `</h1>
 		<p>` + r.FormValue("user_input") + `</p>
+		<br />
+		<p>Copyleft@mizumoto-cn 2023</p>
 	</body>
 	</html>`))
 }
