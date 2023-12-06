@@ -25,7 +25,7 @@ func (h EchoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		<br />
 		<p>Copyright@mizumoto-cn 2023</p>
 		<p>This is a simple homework web application for CSCA5028W2.</p>
-		<p>All the homework code is done by <a href="https://github.com/mizumoto-cn>">@mizumoto-cn</a> and follows the MIT license.</p>
+		<p>All the homework code is done by <a href="https://github.com/mizumoto-cn">@mizumoto-cn</a> and follows the MIT license.</p>
 	</body>
 	</html>`))
 }
@@ -47,7 +47,7 @@ func (h EchoPrintHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		<br />
 		<p>Copyright@mizumoto-cn 2023</p>
 		<p>This is a simple homework web application for CSCA5028W2.</p>
-		<p>All the homework code is done by <a href="https://github.com/mizumoto-cn>">@mizumoto-cn</a> and follows the MIT license.</p>
+		<p>All the homework code is done by <a href="https://github.com/mizumoto-cn">@mizumoto-cn</a> and follows the MIT license.</p>
 	</body>
 	</html>`))
 }
