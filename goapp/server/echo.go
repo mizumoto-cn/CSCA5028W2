@@ -44,6 +44,7 @@ func (h EchoPrintHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	<body>
 		<h1>GoAPP:` + r.URL.Path + `</h1>
 		<p>` + r.FormValue("user_input") + `</p>
+		<button onclick="window.location.href='/';">Back</button>
 		<br />
 		<p>Copyright@mizumoto-cn 2023</p>
 		<p>This is a simple homework web application for CSCA5028W2.</p>
