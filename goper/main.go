@@ -52,4 +52,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("Inserted:data (name, count) VALUES (" + data.Name + ", " + fmt.Sprint(data.Count) + ")")
 }
