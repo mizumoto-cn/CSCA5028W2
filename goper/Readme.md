@@ -17,12 +17,13 @@ docker compose up -d
 In case you have installed go(>=1.20.5), you may run the following command to run the program.
 
 ```bash
-go run main.go
+go build -o goper.exe
+.\goper.exe http://trojan.mizumoto.tech:8081/data
 ```
 
 If you didn't install go, you can visit [here](https://golang.org/doc/install) to install it.
 
-Or you may run `./goper.exe` directly if you are using Windows.
+Or you may run `.\goper.exe http://trojan.mizumoto.tech:8081/data` directly if you are using Windows.
 
 ## License
 
