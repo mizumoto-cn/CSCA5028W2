@@ -1,9 +1,12 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"strconv"
 )
+
+var count int = 0
 
 // simple post handler
 // posts given string
@@ -13,12 +16,13 @@ type PostHandler struct {
 
 func (h PostHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(h.PostString))
+	log.Println("POST::", r.URL.Path, "::", h.PostString)
+	count++
 }
 
 func main() {
 	// create a new mux
 	mux := http.NewServeMux()
-	count := 0
 	// create a json string
 	jsonStr := `{"name":"mizumoto-cn","count":` + strconv.Itoa(count) + `}`
 	// register handlers

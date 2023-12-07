@@ -14,7 +14,7 @@ import (
 
 type Data struct {
 	Name  string `json:"name"`
-	Count string `json:"count"`
+	Count int    `json:"count"`
 }
 
 func main() {
